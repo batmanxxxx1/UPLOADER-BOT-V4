@@ -11,9 +11,9 @@ logging.basicConfig(
 
 class Config(object):
     
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8333337547:AAHRapfjBb36AhqT888dhgkI7dOqKIDDHqE")
-    API_ID = int(os.environ.get("API_ID", "20340960"))
-    API_HASH = os.environ.get("API_HASH", "731d6413f609e18766e56908534d4ae2")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN","8333337547:AAHRapfjBb36AhqT888dhgkI7dOqKIDDHqE")
+    API_ID = int(os.environ.get("API_ID","20340960"))
+    API_HASH = os.environ.get("API_HASH","731d6413f609e18766e56908534d4ae2")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     MAX_FILE_SIZE = 2194304000
@@ -26,7 +26,7 @@ class Config(object):
     OUO_IO_API_KEY = ""
     MAX_MESSAGE_LENGTH = 4096
     PROCESS_MAX_TIMEOUT = 3600
-    DEF_WATER_MARK_FILE = "@UploaderXNTBot"
+    DEF_WATER_MARK_FILE = ""
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
