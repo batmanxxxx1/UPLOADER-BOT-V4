@@ -12,7 +12,7 @@ logging.basicConfig(
 class Config(object):
     
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8333337547:AAHRapfjBb36AhqT888dhgkI7dOqKIDDHqE")
-    API_ID = intos.environ.get("API_ID", "20340960")
+    API_ID = int(os.environ.get("API_ID", "20340960"))
     API_HASH = os.environ.get("API_HASH", "731d6413f609e18766e56908534d4ae2")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
